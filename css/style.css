@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    margin: 0;
+    color: #00bfff;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.left-column,
+.right-column {
+    width: 45%;
+}
+
+.left-column h2,
+.right-column h2 {
+    color: #00bfff;
+}
+
+.skills,
+.portfolio,
+.work {
+    padding: 20px;
+}
+
+.portfolio {
+    background-image: linear-gradient(to bottom, #f4f4f4, #d4d4d4);
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    color: #00bfff;
+}
+
+button {
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0080ff;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 20%;
+    border: 10px solid #0080ff;
+}
+
+/* Loading animation */
+button.loading {
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+button.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border: 3px solid #fff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Table and progress bar */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #00bfff;
+    color: #fff;
+}
+
+.progress-bar {
+    height: 20px;
+    background:
+    linear-gradient(#0080ff, #00bfff);
+    border-radius: 25px;
+}
